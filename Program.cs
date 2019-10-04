@@ -13,7 +13,8 @@ namespace patterns
             //properpyramid(int.Parse(Console.ReadLine()));
             //getmean(n);
             //elementfrequency();
-            mergearrays();
+            //mergearrays();
+            squareofnumbers();
         }
         public static void getmean(int n)
         {
@@ -227,6 +228,22 @@ namespace patterns
                 Console.Write("{0},", c[y]);
             }
 
+
+        }
+        public static void squareofnumbers()
+        {
+            int[] input = { -11,-55,0,2,8,5,7};
+            int[] result = new int[input.Length];
+            int[] sortedresult = new int[input.Length];
+            for(int i=0;i<input.Length;i++)
+            {
+                result[i] = input[i] * input[i];
+            }
+            Array.Sort(result);
+            for (int i=0; i<result.Length;i++)
+            {
+                Console.Write("{0},",result[i]);
+            }
 
         }
     }
